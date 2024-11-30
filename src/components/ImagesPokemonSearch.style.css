@@ -1,0 +1,69 @@
+.pokemons-images {
+  width: 100%;
+  background-image: url(../assets/img/list_bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pokemons-images .title-container {
+  position: relative;
+  height: 110px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.pokemons-images .title-container h1 {
+  color: var(--primary-color);
+  text-shadow: 0 0 10px var(--neon-shadow);
+
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(calc(-50% - 5px));
+}
+
+.pokemons-images .title-container img {
+  width: 1064px;
+  height: 110px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(calc(-50% - 5px));
+}
+
+.pokemons-images .pokemons-container {
+  display: flex;
+  position: relative;
+  min-height: 30vh;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.pokemons-images .animation-pokemons-container {
+  position: absolute;
+  height: 120%;
+  width: auto;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  animation: rotatePokemonsContainer 5s linear infinite;
+}
+
+@keyframes rotatePokemonsContainer {
+  0% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .pokemons-images .pokemons-container {
+    justify-content: center;
+  }
+}

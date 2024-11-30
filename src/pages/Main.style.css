@@ -1,0 +1,12 @@
+.main-section {
+  padding-top: 60px;
+}
+
+.main-section main {
+  padding: 1rem 2rem;
+  min-height: 60vh;
+}
+
+.back-to-start {
+  margin-bottom: 1.5rem;
+}

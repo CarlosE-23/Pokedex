@@ -1,0 +1,28 @@
+:root {
+  --primary-background: #09141f;
+  --secondary-background: #16202a;
+  --white-background: #f2f0eb;
+
+  --primary-color: #082338;
+
+  --neon-shadow: #3a5c80;
+  --line-color: #bbe9fd;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: var(--primary-background);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 15px #1a344e;
+  min-height: 100vh;
+}

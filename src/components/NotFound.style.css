@@ -1,0 +1,19 @@
+.not-found {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found p {
+  color: #fff;
+}
+
+.not-found p span:last-child {
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px var(--neon-shadow);
+  font-weight: 600;
+  cursor: pointer;
+}

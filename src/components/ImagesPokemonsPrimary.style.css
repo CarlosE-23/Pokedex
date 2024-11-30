@@ -1,0 +1,147 @@
+.pokemons-images .five-pokemons {
+  position: relative;
+  z-index: 50;
+  width: 22%;
+  height: auto;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemons-images .five-pokemons .poke-img-container {
+  position: absolute;
+  width: 40%;
+  height: auto;
+  background-image: url(../assets/img/random_bg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemons-images .five-pokemons .poke-img-container[data-pokemon-number="1"] {
+  background-image: url(../assets/img/random_center_bg.png);
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+
+.pokemons-images .five-pokemons .poke-img-container img {
+  width: 100%;
+}
+
+.pokemons-images .five-pokemons .poke-img-container[data-pokemon-number="2"] {
+  top: 0;
+  left: -35%;
+}
+
+.pokemons-images .five-pokemons .poke-img-container[data-pokemon-number="3"] {
+  bottom: 0;
+  left: -35%;
+}
+.pokemons-images .five-pokemons .poke-img-container[data-pokemon-number="4"] {
+  right: -35%;
+  top: 0;
+}
+.pokemons-images .five-pokemons .poke-img-container[data-pokemon-number="5"] {
+  right: -35%;
+  bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .pokemons-images .five-pokemons {
+    width: 40%;
+  }
+  .pokemons-images .five-pokemons .poke-img-container {
+    width: 50%;
+  }
+
+  .pokemons-images .five-pokemons .poke-img-container[data-pokemon-number="4"],
+  .pokemons-images .five-pokemons .poke-img-container[data-pokemon-number="5"] {
+    right: -50%;
+  }
+
+  .pokemons-images .five-pokemons .poke-img-container[data-pokemon-number="2"],
+  .pokemons-images .five-pokemons .poke-img-container[data-pokemon-number="3"] {
+    left: -50%;
+  }
+
+  .pokemons-images .five-pokemons .poke-img-container[data-pokemon-number="2"],
+  .pokemons-images .five-pokemons .poke-img-container[data-pokemon-number="4"] {
+    top: -5px;
+  }
+
+  .pokemons-images .five-pokemons .poke-img-container[data-pokemon-number="3"],
+  .pokemons-images .five-pokemons .poke-img-container[data-pokemon-number="5"] {
+    bottom: -5px;
+  }
+}
+
+/* four */
+
+.pokemons-images .four-pokemons {
+  position: relative;
+  z-index: 45;
+  max-width: 300px;
+  width: 30%;
+  height: auto;
+  opacity: 0;
+}
+
+.pokemons-images .four-pokemons .poke-img-container {
+  position: absolute;
+  width: 33%;
+  background-image: url(../assets/img/random_bg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemons-images .four-pokemons .poke-img-container[data-pokemon-number="1"] {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.pokemons-images .four-pokemons .poke-img-container[data-pokemon-number="2"] {
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pokemons-images .four-pokemons .poke-img-container[data-pokemon-number="3"] {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5px;
+}
+
+.pokemons-images .four-pokemons .poke-img-container[data-pokemon-number="4"] {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.pokemons-images .four-pokemons .poke-img-container img {
+  width: 100%;
+}
+
+.visibility-pokemon {
+  animation: visibilityPokemon 1s ease-in-out forwards;
+}
+
+@keyframes visibilityPokemon {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+  }
+}

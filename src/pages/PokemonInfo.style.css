@@ -1,0 +1,21 @@
+.pokemon-info-section {
+  padding-top: 60px;
+}
+
+.pokemon-info-section main {
+  padding: 2rem 1rem;
+  overflow: hidden;
+  background-image: url(../assets/img/list_bg.jpg);
+  backdrop-filter: blur(10px);
+  min-height: 100vh;
+}
+
+.back-to-home {
+  margin-block: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  text-shadow: 0 0 2px var(--neon-shadow);
+}

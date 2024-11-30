@@ -1,0 +1,31 @@
+.evolution-chain-section {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.evolution-chain-section .evolution-chain-title h2 {
+  margin-bottom: 2rem;
+  color: #fff;
+  font-weight: 400;
+  text-shadow: 0 0 10px var(--neon-shadow);
+}
+
+.evolution-chain-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.evolution-chain-container .evolution-chain {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  justify-content: center;
+}

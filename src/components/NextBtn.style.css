@@ -1,0 +1,19 @@
+.next-btn {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.next-btn p {
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 0 5px var(--neon-shadow);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.next-btn .arrow {
+  filter: drop-shadow(0 0 5px var(--neon-shadow));
+}

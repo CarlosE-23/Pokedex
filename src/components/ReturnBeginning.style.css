@@ -1,0 +1,9 @@
+.exit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.exit .exit-btn {
+  transform: rotate(180deg);
+  cursor: pointer;
+}
