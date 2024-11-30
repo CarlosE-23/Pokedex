@@ -30,7 +30,8 @@ This project is based on the **Portal Pokémon**, where you can find resources a
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone <REPOSITORY_URL>
-   ```
+Clone the repository:
+
+```bash
+git clone <git@github.com:CarlosE-23/Pokedex.git>
+```
