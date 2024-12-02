@@ -5,7 +5,21 @@ import { SiPokemon } from "react-icons/si";
 function Header() {
   const navigator = useNavigate();
   const handleSearch = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter") navigator("/pokemon/" + e.currentTarget.value);
+    e.currentTarget.setCustomValidity("");
+    if (e.key === "Enter") {
+      const { value } = e.currentTarget;
+      if (value.trim().match(/^[a-zA-Z0-9]+$/)) {
+        navigator("/pokemon/" + value.trim());
+        e.currentTarget.value = "";
+      } else {
+        if (!value) e.currentTarget.setCustomValidity("Complete This Field");
+        else
+          e.currentTarget.setCustomValidity(
+            "Only Letters And Numbers Are Allowed"
+          );
+        e.currentTarget.reportValidity();
+      }
+    }
   };
   return (
     <header>

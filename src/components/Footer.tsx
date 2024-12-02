@@ -7,6 +7,8 @@ function Footer() {
     <footer>
       <p>
         <span>Pagina elavorada por Carlos Guanipa </span>
+      </p>
+      <p>
         <a href="https://github.com/CarlosE-23" target="_blank">
           <FaGithub size={15} className="social-icon" />
           <span>github.com/CarlosE-23</span>

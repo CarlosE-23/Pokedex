@@ -1,5 +1,9 @@
 .main-section {
+  width: 100%;
   padding-top: 60px;
+  background-image: url(../assets/img/list_bg.jpg);
+  background-size: contain;
+  backdrop-filter: blur(10px);
 }
 
 .main-section main {
@@ -9,4 +13,10 @@
 
 .back-to-start {
   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  .main-section main {
+    padding: 1rem 0.5rem;
+  }
 }

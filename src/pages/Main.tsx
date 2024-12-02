@@ -21,6 +21,7 @@ function Main() {
     setSearchPokemonsType,
     getDefPokemons,
     notResults,
+    searchPokemonsNext,
   } = usePokemons();
 
   const navigator = useNavigate();
@@ -35,8 +36,9 @@ function Main() {
     window.scrollTo({ top: 0 });
   }, []);
 
-  const handleActionErrorMessage = () => {
-    params.type ? navigator("/") : getDefPokemons();
+  const handleActionErrorMessage = (e: React.MouseEvent) => {
+    e.preventDefault();
+    searchPokemonsNext ? getNextPokemons() : getDefPokemons();
   };
 
   const handleActionExit = () => navigator("/");

@@ -50,6 +50,8 @@ export default function usePokemons(
 
       if (newPokemons instanceof Error) throw newPokemons;
 
+      if (searchPokemonsType && [...newPokemons].length === 0)
+        setNotResults(true);
       if ([...pokemons, ...newPokemons].length === 0) setNotResults(true);
 
       setPokemons((prevPokemons) => [...prevPokemons, ...newPokemons]);
@@ -85,5 +87,6 @@ export default function usePokemons(
     searchPokemonsType,
     setSearchPokemonsType,
     notResults,
+    searchPokemonsNext,
   };
 }

@@ -2,6 +2,8 @@ import "./SearchByType.style.css";
 import { pokemonApi } from "../assets/api";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import TitleBackground from "../assets/img/advance_search_close_bg.png";
+import SearchByTypeBackground from "../assets/img/advance_search_open_bg.png";
 
 function SearchByType() {
   const [open, setOpen] = useState(false);
@@ -13,11 +15,7 @@ function SearchByType() {
     <div className="search-by-type">
       <div className="title-container" onClick={handleOpen}>
         <h3 title="Open Search">Search By Type</h3>
-        <img
-          src="./src/assets/img/advance_search_close_bg.png"
-          alt="Font"
-          title="Open Search"
-        />
+        <img src={TitleBackground} alt="background" title="Open Search" />
       </div>
       <div className={`pokemon-types-container ${open && "open"}`}>
         <div className="pokemon-types-content">
@@ -39,7 +37,7 @@ function SearchByType() {
           ></div>
         </div>
         <img
-          src="./src/assets/img/advance_search_open_bg.png"
+          src={SearchByTypeBackground}
           alt="background"
           className="pokemon-types-container-background"
         />

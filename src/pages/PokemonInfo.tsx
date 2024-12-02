@@ -16,14 +16,18 @@ function PokemonInfo() {
 
   useEffect(() => {
     const { order } = params;
-    getPokemon(order || "");
+    getPokemon(order?.toLowerCase() || "");
   }, [params]);
 
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [pokemon]);
 
-  const handleErrorAction = () => navigator("/");
+  const handleErrorAction = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const { order } = params;
+    getPokemon(order?.toLowerCase() || "");
+  };
 
   const handleBackHome = () => navigator("/");
 
@@ -36,7 +40,7 @@ function PokemonInfo() {
           <ErrorMessage
             error={error.message}
             action={handleErrorAction}
-            message="Back To Top"
+            message="Try Again"
           />
         )}
         {pokemon && !loading && <PokemonInfoContent pokemon={pokemon} />}

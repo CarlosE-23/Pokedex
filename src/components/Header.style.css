@@ -31,3 +31,9 @@ header input:hover,
 header input:focus {
   box-shadow: 0 0 8px var(--neon-shadow);
 }
+
+@media (max-width: 450px) {
+  header {
+    padding: 0 0.5rem;
+  }
+}

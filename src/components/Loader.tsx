@@ -1,9 +1,10 @@
 import "./Loader.style.css";
+import LoaderImg from "../assets/img/ajax-loader.gif";
 
 function Loader() {
   return (
     <div className="loader">
-      <img src="./src/assets/img/ajax-loader.gif" alt="loader" />
+      <img src={LoaderImg} alt="loader" />
     </div>
   );
 }

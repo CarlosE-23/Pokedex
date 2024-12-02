@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./ImagesPokemonSearch.style.css";
 import ImagesPokemonsPrimary from "./ImagesPokemonsPrimary";
+import AnimationFond from "../assets/img/pokemon_list_bg.png";
+import TitleFond from "../assets/img/pokedex_bg.png";
 
 function ImagesPokemonSearch() {
   const [viewMobil, setViewMobil] = useState(false);
@@ -23,7 +25,7 @@ function ImagesPokemonSearch() {
   return (
     <div className="pokemons-images">
       <div className="title-container">
-        <img src="./src/assets/img/pokedex_bg.png" alt="title-background" />
+        <img src={TitleFond} alt="title-background" />
         <h1>Pokedex</h1>
       </div>
       <div className={`pokemons-container`}>
@@ -31,7 +33,7 @@ function ImagesPokemonSearch() {
         <ImagesPokemonsPrimary numberPokemons={5} />
         {!viewMobil && <ImagesPokemonsPrimary numberPokemons={4} />}
         <img
-          src="./src/assets/img/pokemon_list_bg.png"
+          src={AnimationFond}
           alt="animation"
           className="animation-pokemons-container"
         />

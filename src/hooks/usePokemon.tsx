@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { TPokemon } from "../types/global.type";
 import pFetch from "../helpers/fetch";
 import { pokemonApi } from "../assets/api";
@@ -46,6 +46,10 @@ export default function usePokemon() {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    error && setPokemon(null);
+  }, [error]);
 
   return { pokemon, error, loading, getPokemon };
 }

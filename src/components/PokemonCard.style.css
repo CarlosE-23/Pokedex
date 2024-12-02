@@ -49,6 +49,7 @@
   border-radius: 5px;
   text-align: center;
   color: #fff;
+  font-size: 16px;
 }
 
 .pokemon-card .pokemon-card-background {
@@ -58,4 +59,10 @@
   height: 100%;
   top: 0;
   left: 0;
+}
+
+@media (max-width: 400px) {
+  .card-pokemon-container .pokemon-type {
+    font-size: 12px;
+  }
 }

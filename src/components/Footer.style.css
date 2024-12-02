@@ -28,11 +28,12 @@ footer a {
   footer {
     padding: 0.5rem;
     gap: 5px;
+    flex-direction: column;
   }
 
-  footer .info > p {
+  footer p {
     gap: 5px;
-    font-size: 7px;
+    font-size: 9px;
   }
 
   footer .social-icon {
@@ -44,4 +45,7 @@ footer a {
     width: 25px;
     height: 25px;
   }
+}
+
+@media (max-width: 380px) {
 }

@@ -3,6 +3,7 @@ import { TPokemon } from "../types/global.type";
 import PokemonType from "./PokemonType";
 import "./PokemonCard.style.css";
 import starUppercase from "../helpers/starUppercase";
+import CardFond from "../assets/img/list_pokemon_bg.png";
 
 function PokemonCard({ pokemon }: { pokemon: TPokemon }) {
   const navigator = useNavigate();
@@ -32,7 +33,7 @@ function PokemonCard({ pokemon }: { pokemon: TPokemon }) {
         </p>
       </div>
       <img
-        src="./src/assets/img/list_pokemon_bg.png"
+        src={CardFond}
         alt="background"
         className="pokemon-card-background"
       />

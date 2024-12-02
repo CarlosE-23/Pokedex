@@ -27,7 +27,7 @@ type PokemonSpecies = {
   url: string; // URL for more details about the species
 };
 
-type PokemonEncounter = {
+/* type PokemonEncounter = {
   location_area: {
     name: string; // Name of the encounter area
     url: string; // URL for more details about the area
@@ -48,7 +48,7 @@ type PokemonEncounter = {
       }[];
     }[];
   }[];
-};
+}; */
 
 type PokemonTypes = {
   slot: number;

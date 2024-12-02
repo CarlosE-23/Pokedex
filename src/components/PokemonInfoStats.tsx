@@ -10,7 +10,6 @@ type TProps = {
 
 function PokemonInfoStats(props: TProps) {
   const { stats } = props;
-  console.log(stats);
   return (
     <div className="stats-container">
       <div className="stats">
